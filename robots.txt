@@ -1,0 +1,22 @@
+User-agent: *
+Disallow: /spasibo/
+Disallow: /send.php
+
+# ИИ-ассистенты разрешены явно. У бота со своей группой правила «*» не действуют (RFC 9309), поэтому запреты повторены.
+# YandexAdditional (быстрые ответы с YandexGPT и Поиск с Алисой) разрешён по умолчанию — не запрещать.
+User-agent: OAI-SearchBot
+User-agent: ChatGPT-User
+User-agent: GPTBot
+User-agent: Claude-SearchBot
+User-agent: Claude-User
+User-agent: ClaudeBot
+User-agent: PerplexityBot
+User-agent: Perplexity-User
+User-agent: Google-Extended
+Disallow: /spasibo/
+Disallow: /send.php
+
+# Метки рекламы и аналитики: Яндексу не считать такие адреса отдельными страницами
+Clean-param: utm_source&utm_medium&utm_campaign&utm_content&utm_term&yclid&ysclid&gclid&fbclid&_openstat&from
+
+Sitemap: https://sivilla-rostov.ru/sitemap.xml

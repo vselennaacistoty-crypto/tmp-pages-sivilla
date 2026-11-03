@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, follow">
+<title>Сивилла — потомственная ясновидящая в Ростове-на-Дону · приём и консультация</title>
+<link rel="canonical" href="https://sivilla-rostov.ru/priem/">
+<meta property="og:url" content="https://sivilla-rostov.ru/priem/">
+<meta property="og:image" content="https://sivilla-rostov.ru/img/hero.jpg">
+<meta name="description" content="Ушёл муж, полоса неудач, порча? 42 года помогаю в Ростове-на-Дону: Таро, снятие негатива, защита, возврат в семью. Запишитесь на консультацию по телефону.">
+<script>document.documentElement.classList.add('js')</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Prata&family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/splitting/1.0.6/splitting.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.1.14/swiper-bundle.min.css">
+<style>
+:root{
+  --font-display:"Prata",Georgia,serif;
+  --font-sans:"Manrope",system-ui,sans-serif;
+
+  --fs-hero:clamp(3.6rem,15vw,14rem);
+  --fs-h2:clamp(2.1rem,5.5vw,4.6rem);
+  --fs-h3:clamp(1.35rem,2.4vw,2.1rem);
+  --fs-lead:clamp(1.2rem,2vw,1.7rem);
+  --fs-body:clamp(1rem,1.05vw,1.12rem);
+  --fs-label:.78rem;
+
+  --bg:#140D12; --bg2:#1B121A; --wine:#2A1922; --surface:#20161E;
+  --cream:#ECE3D6; --muted:#9E8F97; --line:rgba(201,162,75,.22);
+  --gold:#C9A24B; --gold-soft:#DCC290; --ember:#E9B06A;
+
+  --radius:18px; --radius-pill:999px;
+  --e-out:cubic-bezier(.16,1,.3,1); --e-inout:cubic-bezier(.65,0,.35,1);
+  --maxw:1360px; --gutter:clamp(20px,5vw,80px); --section-y:clamp(90px,13vw,200px);
+}
+*{margin:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:var(--font-sans);font-size:var(--fs-body);line-height:1.6;color:var(--cream);
+  background:var(--bg);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:var(--maxw);margin-inline:auto;padding-inline:var(--gutter)}
+.section{padding-block:var(--section-y);position:relative}
+.serif{font-family:var(--font-display);font-weight:400;line-height:1.02;letter-spacing:.01em}
+.eyebrow{font-size:var(--fs-label);letter-spacing:.28em;text-transform:uppercase;color:var(--gold);font-weight:600}
+.muted{color:var(--muted)}
+.gold{color:var(--gold)}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;gap:.7em;padding:1.05em 1.9em;border-radius:var(--radius-pill);
+  font-size:var(--fs-label);letter-spacing:.1em;text-transform:uppercase;font-weight:600;
+  background:var(--gold);color:#1a1008;transition:transform .35s var(--e-out),box-shadow .35s;
+  will-change:transform;box-shadow:0 10px 40px -12px rgba(201,162,75,.5)}
+.btn:hover{transform:translateY(-2px);box-shadow:0 16px 50px -12px rgba(201,162,75,.7)}
+.btn--ghost{background:transparent;color:var(--cream);border:1px solid var(--line);box-shadow:none}
+.btn--ghost:hover{border-color:var(--gold);box-shadow:none}
+
+/* loader */
+.loader{position:fixed;inset:0;z-index:100;background:var(--bg);display:flex;align-items:center;
+  justify-content:center;flex-direction:column;gap:18px;transition:opacity .5s ease;
+  animation:loaderOut .6s ease 1.5s forwards}
+@keyframes loaderOut{to{opacity:0;visibility:hidden;pointer-events:none}}
+.loader__logo{font-family:var(--font-display);font-size:clamp(2.4rem,7vw,5rem);color:var(--cream);letter-spacing:.06em}
+.loader__bar{width:min(46vw,300px);height:1px;background:var(--line);position:relative;overflow:hidden}
+.loader__bar::after{content:"";position:absolute;inset:0;background:var(--gold);transform:scaleX(var(--p,0));transform-origin:left}
+.no-js .loader{display:none}
+
+/* header */
+.header{position:fixed;top:0;left:0;right:0;z-index:50;display:flex;align-items:center;justify-content:space-between;
+  padding:20px var(--gutter);transition:background .4s,padding .4s,border-color .4s;border-bottom:1px solid transparent}
+.header.scrolled{background:rgba(20,13,18,.82);backdrop-filter:blur(12px);border-color:var(--line);padding-block:14px}
+.header__logo{font-family:var(--font-display);font-size:1.5rem;letter-spacing:.06em}
+.header__nav{display:flex;gap:26px;font-size:var(--fs-label);text-transform:uppercase;letter-spacing:.12em}
+.header__nav a{color:var(--muted);transition:color .3s}
+.header__nav a:hover{color:var(--gold)}
+.header__phone{font-size:var(--fs-label);letter-spacing:.08em;color:var(--cream);white-space:nowrap}
+@media(max-width:900px){.header__nav{display:none}.header__phone{display:none}}
+
+/* hero */
+.hero{min-height:100svh;display:flex;flex-direction:column;justify-content:flex-end;position:relative;
+  padding-block:16vh clamp(40px,7vw,90px);overflow:hidden}
+.hero__bg{position:absolute;inset:0;z-index:-2}
+.hero__bg img{width:100%;height:100%;object-fit:cover;object-position:30% 26%;opacity:.72}
+.hero__bg::after{content:"";position:absolute;inset:0;
+  background:linear-gradient(180deg,rgba(20,13,18,.30) 0%,rgba(20,13,18,.34) 42%,rgba(20,13,18,.93) 100%)}
+.glow{position:absolute;z-index:-1;width:60vw;height:60vw;left:50%;top:34%;transform:translate(-50%,-50%);
+  background:radial-gradient(circle,rgba(233,176,106,.20),transparent 62%);filter:blur(20px);pointer-events:none}
+.js .glow{animation:flicker 5s var(--e-inout) infinite}
+@keyframes flicker{0%,100%{opacity:.85}45%{opacity:1}70%{opacity:.7}}
+.hero__title{font-family:var(--font-display);font-size:var(--fs-hero);line-height:.9;letter-spacing:.01em}
+.hero__tag{font-size:var(--fs-lead);color:var(--cream);margin-top:10px;font-weight:300;letter-spacing:.02em}
+.hero__row{display:flex;align-items:flex-end;justify-content:space-between;gap:28px;margin-top:clamp(28px,4vw,48px);flex-wrap:wrap}
+.hero__date{border:1px solid var(--line);border-radius:var(--radius);padding:18px 22px;background:rgba(42,25,34,.4);
+  backdrop-filter:blur(6px);max-width:280px}
+.hero__date b{color:var(--gold-soft);font-family:var(--font-display);font-weight:400;font-size:1.15rem}
+.hero__cue{position:absolute;bottom:22px;right:var(--gutter);font-size:var(--fs-label);letter-spacing:.2em;
+  text-transform:uppercase;color:var(--muted)}
+.js .hero__cue{animation:bob 2.4s var(--e-inout) infinite}
+@keyframes bob{0%,100%{transform:translateY(0);opacity:.6}50%{transform:translateY(7px);opacity:1}}
+
+/* reveal start-states */
+/* контент виден по умолчанию; reveal — прогрессивное улучшение (GSAP from) */
+
+/* manifesto */
+.manifesto{text-align:center}
+.manifesto__num{font-family:var(--font-display);font-size:clamp(5rem,18vw,15rem);color:var(--gold);line-height:.85}
+.manifesto__text{font-family:var(--font-display);font-size:var(--fs-h2);max-width:16ch;margin:6px auto 0;line-height:1.1}
+.manifesto__text .word{color:var(--muted);transition:color .3s}
+.manifesto__sub{max-width:52ch;margin:34px auto 0;color:var(--muted)}
+
+/* directions */
+.sec-head{display:flex;align-items:end;justify-content:space-between;gap:24px;flex-wrap:wrap;margin-bottom:clamp(40px,6vw,72px)}
+.sec-head h2{font-size:var(--fs-h2)}
+.dgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(215px,1fr));gap:clamp(14px,1.6vw,22px)}
+.dcard{position:relative;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;
+  background:var(--surface);min-height:300px;display:flex;flex-direction:column;justify-content:flex-end;
+  padding:24px;transition:transform .6s var(--e-out),border-color .4s}
+.dcard__img{position:absolute;inset:0;z-index:0}
+.dcard__img img{width:100%;height:100%;object-fit:cover;opacity:.4;transition:transform .9s var(--e-out),opacity .5s}
+.dcard::after{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,rgba(20,13,18,.2),rgba(20,13,18,.9))}
+.dcard>*{position:relative;z-index:2}
+.dcard:hover{transform:translateY(-6px);border-color:var(--gold)}
+.dcard:hover .dcard__img img{transform:scale(1.07);opacity:.55}
+.dcard__num{font-family:var(--font-display);color:var(--gold);font-size:1rem;margin-bottom:auto}
+.dcard__name{font-family:var(--font-display);font-size:var(--fs-h3);margin:14px 0 8px}
+.dcard__desc{color:var(--muted);font-size:.98rem}
+@media(max-width:860px){.dgrid{grid-template-columns:1fr 1fr}}
+@media(max-width:560px){.dgrid{grid-template-columns:1fr}}
+
+/* steps */
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:clamp(18px,2.5vw,40px);border-top:1px solid var(--line);padding-top:52px}
+.step__n{font-family:var(--font-display);font-size:clamp(2.4rem,4vw,3.4rem);color:var(--gold);line-height:1}
+.step h4{font-family:var(--font-display);font-weight:400;font-size:1.35rem;margin:14px 0 8px}
+.step p{color:var(--muted);font-size:.98rem}
+@media(max-width:800px){.steps{grid-template-columns:1fr 1fr;gap:32px}}
+
+/* about */
+.about{display:grid;grid-template-columns:0.85fr 1fr;gap:clamp(30px,5vw,80px);align-items:center}
+.about__img{border-radius:var(--radius);overflow:hidden;border:1px solid var(--line)}
+.about__img img{width:100%;aspect-ratio:4/5;object-fit:cover}
+.about h2{font-size:var(--fs-h2);margin-bottom:24px}
+.about p{color:var(--muted);margin-bottom:16px;max-width:52ch}
+.pull{font-family:var(--font-display);font-size:clamp(1.5rem,2.6vw,2.2rem);color:var(--cream);line-height:1.25;
+  margin:30px 0;padding-left:26px;border-left:2px solid var(--gold)}
+@media(max-width:820px){.about{grid-template-columns:1fr}.about__img{max-width:420px}}
+
+/* gallery */
+.gal{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(12px,1.5vw,20px)}
+.gal figure{border-radius:var(--radius);overflow:hidden;border:1px solid var(--line);position:relative}
+.gal img{width:100%;aspect-ratio:1;object-fit:cover;transition:transform .9s var(--e-out)}
+.gal figure:hover img{transform:scale(1.06)}
+.gal figcaption{position:absolute;left:0;bottom:0;right:0;padding:16px 18px;font-size:var(--fs-label);
+  letter-spacing:.08em;text-transform:uppercase;color:var(--cream);
+  background:linear-gradient(0deg,rgba(20,13,18,.85),transparent)}
+@media(max-width:720px){.gal{grid-template-columns:1fr}.gal figcaption{position:static;background:none}}
+.priem{border-radius:var(--radius);overflow:hidden;border:1px solid var(--line);max-width:920px;margin-inline:auto;box-shadow:0 30px 80px -30px rgba(0,0,0,.6)}
+.priem img{width:100%;display:block}
+
+/* reviews */
+.rev-head{margin-bottom:clamp(38px,6vw,60px)}
+.rev-head h2{font-size:var(--fs-h2);margin-top:12px}
+.reviews{overflow:visible}
+.rev{width:min(72vw,320px);border-radius:16px;overflow:hidden;border:1px solid var(--line);
+  background:var(--surface);margin:0;box-shadow:0 24px 60px -28px rgba(0,0,0,.6)}
+.rev img{width:100%;display:block}
+.reviews .swiper-pagination{position:static;margin-top:30px;text-align:left}
+.reviews .swiper-pagination-bullet{background:var(--muted);opacity:.5;width:8px;height:8px}
+.reviews .swiper-pagination-bullet-active{background:var(--gold);opacity:1}
+
+/* price */
+.price{background:linear-gradient(160deg,var(--wine),var(--bg2));border:1px solid var(--line);border-radius:24px;
+  padding:clamp(36px,6vw,72px);text-align:center;position:relative;overflow:hidden}
+.price::before{content:"";position:absolute;width:40vw;height:40vw;top:-15vw;left:50%;transform:translateX(-50%);
+  background:radial-gradient(circle,rgba(201,162,75,.14),transparent 65%)}
+.price__num{font-family:var(--font-display);font-size:clamp(3.4rem,10vw,8rem);color:var(--gold-soft);line-height:1;position:relative}
+.price__cap{position:relative;color:var(--cream);font-size:var(--fs-lead);margin-top:8px}
+.price__note{position:relative;color:var(--muted);max-width:46ch;margin:24px auto 0}
+
+/* confidential */
+.conf{text-align:center;max-width:60ch;margin-inline:auto}
+.conf h2{font-size:var(--fs-h2);margin-bottom:24px}
+.conf p{color:var(--muted);font-size:var(--fs-lead);line-height:1.5}
+
+/* cta */
+.cta{text-align:center;position:relative}
+.cta__title{font-family:var(--font-display);font-size:var(--fs-h2);max-width:20ch;margin-inline:auto}
+.cta__phone{font-family:var(--font-display);font-size:clamp(2.4rem,7vw,5rem);color:var(--gold-soft);margin:24px 0 10px;display:inline-block}
+.cta__phone:hover{color:var(--gold)}
+.cta__note{color:var(--muted);max-width:44ch;margin:0 auto}
+.cta__hours{margin-top:26px;font-size:var(--fs-label);letter-spacing:.16em;text-transform:uppercase;color:var(--gold)}
+.notme{margin-top:44px;padding-top:26px;border-top:1px solid var(--line);color:var(--muted);max-width:56ch;margin-inline:auto;font-size:.98rem}
+
+/* footer */
+.footer{border-top:1px solid var(--line);padding-block:56px 34px}
+.footer__grid{display:flex;justify-content:space-between;gap:40px;flex-wrap:wrap}
+.footer__logo{font-family:var(--font-display);font-size:2rem}
+.footer__col h5{font-size:var(--fs-label);text-transform:uppercase;letter-spacing:.14em;color:var(--gold);margin-bottom:14px}
+.footer__col a,.footer__col p{display:block;color:var(--muted);padding:4px 0}
+.footer__bottom{margin-top:44px;color:var(--muted);font-size:.82rem;opacity:.7;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+
+@media(prefers-reduced-motion:reduce){.glow,.hero__cue{animation:none}}
+.ck{position:fixed;left:0;right:0;bottom:0;z-index:60;background:#1F1016;border-top:1px solid rgba(239,233,225,.16);color:#D3C5BB;padding:14px 20px;display:flex;gap:18px;align-items:center;justify-content:center;flex-wrap:wrap;font-size:14.5px;line-height:1.45}
+.ck[hidden]{display:none}.ck p{max-width:790px;margin:0}
+.ck a{color:#EADFD3;border-bottom:1px solid var(--gold-soft);text-decoration:none}
+.ck button{flex:none;background:var(--gold);color:#231318;border:0;border-radius:2px;padding:11px 28px;font-family:inherit;font-size:15px;font-weight:600;cursor:pointer}
+@media(max-width:640px){.ck{padding:13px 16px;font-size:13.5px;gap:12px;justify-content:flex-start}.ck button{width:100%}}
+</style>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();
+   for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+   ym(112784449, "init", {clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true});
+   ym(112882386, "init", {clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true});
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/112784449" style="position:absolute; left:-9999px;" alt="" /><img src="https://mc.yandex.ru/watch/112882386" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+</head>
+<body>
+
+<div class="loader" data-loader aria-hidden="true">
+  <span class="loader__logo">Сивилла</span>
+  <span class="loader__bar"></span>
+</div>
+<header class="header" data-header>
+  <a class="header__logo" href="#">Сивилла</a>
+  <nav class="header__nav">
+    <a href="#napravleniya">Направления</a>
+    <a href="#priem">Как проходит</a>
+    <a href="#o-mne">Обо мне</a>
+    <a href="#cena">Консультация</a>
+    <a href="#kontakty">Контакты</a>
+  </nav>
+  <a class="header__phone" href="tel:+79612885849">+7 961 288-58-49</a>
+</header>
+
+<main>
+  <!-- HERO -->
+  <section class="hero wrap">
+    <div class="hero__bg"><img src="img/hero.webp" alt="Стол для гадания при свечах"></div>
+    <div class="glow"></div>
+    <p class="eyebrow" data-reveal>Ростов-на-Дону · 42 года практики</p>
+    <h1 class="hero__title" data-hero-title style="font-size:clamp(2.6rem,8.5vw,5.2rem);line-height:1">Потомственная<br>ясновидящая</h1>
+    <p class="hero__tag" data-reveal>Ушёл муж? Полоса неудач? Не складывается жизнь? Идите ко мне — найду причину и уберу её.</p>
+    <div class="hero__row">
+      <a class="btn" href="tel:+79612885849" data-reveal data-magnetic>Записаться на консультацию</a>
+      <div class="hero__date" data-reveal>
+        <p class="eyebrow" style="letter-spacing:.16em">Звоните</p>
+        <b><a href="tel:+79612885849">+7 961 288-58-49</a></b>
+        <p class="muted" style="font-size:.9rem;margin-top:6px">Отвечу сама · ежедневно 10:00–20:00</p>
+      </div>
+    </div>
+    <span class="hero__cue">вниз ↓</span>
+  </section>
+
+  <!-- MANIFESTO -->
+  <section class="section wrap manifesto">
+    <div class="manifesto__num" data-count="42">0</div>
+    <p class="manifesto__text" data-words data-splitting="words">года ставлю людей на ноги</p>
+    <p class="manifesto__sub" data-reveal>Ко мне идут, когда всё перепробовали и опустили руки: измены, безденежье, порча, одиночество. Я не уговариваю и не гадаю на публику. Я нахожу причину — и убираю её.</p>
+  </section>
+
+  <!-- DIRECTIONS -->
+  <section class="section wrap" id="napravleniya">
+    <div class="sec-head">
+      <h2 class="serif" data-reveal>Десять направлений<br>работы</h2>
+      <p class="muted" data-reveal style="max-width:34ch">Гадание и обряды. Найду причину ваших бед — и уберу её.</p>
+    </div>
+    <div class="dgrid" data-stagger>
+      <a class="dcard"><div class="dcard__img"><img src="img/d-taro.webp" alt="Таро"></div><span class="dcard__num">01</span><h3 class="dcard__name">Таро</h3><p class="dcard__desc">Покажу всю правду об отношениях, деньгах и людях вокруг вас.</p></a>
+      <a class="dcard"><div class="dcard__img"><img src="img/d-lenormand.webp" alt="Ленорман"></div><span class="dcard__num">02</span><h3 class="dcard__name">Ленорман</h3><p class="dcard__desc">Прямой ответ на главный вопрос: уйти, остаться, доверять, соглашаться.</p></a>
+      <a class="dcard"><div class="dcard__img"><img src="img/d-gushcha.webp" alt="Кофейная гуща"></div><span class="dcard__num">03</span><h3 class="dcard__name">Кофейная гуща</h3><p class="dcard__desc">Увижу, что вас ждёт в ближайшее время и кто рядом с вами.</p></a>
+      <a class="dcard"><div class="dcard__img"><img src="img/d-ruka.webp" alt="Чтение по руке"></div><span class="dcard__num">04</span><h3 class="dcard__name">Чтение по руке</h3><p class="dcard__desc">По ладони прочитаю судьбу, вашу силу и переломные моменты.</p></a>
+      <a class="dcard"><div class="dcard__img"><img src="img/d-porcha.webp" alt="Снятие негатива"></div><span class="dcard__num">05</span><h3 class="dcard__name">Снятие негатива</h3><p class="dcard__desc">Сниму порчу, сглаз и чёрную полосу. Жизнь пойдёт в гору.</p></a>
+      <a class="dcard"><div class="dcard__img"><img src="img/d-zashchita.webp" alt="Защита"></div><span class="dcard__num">06</span><h3 class="dcard__name">Защита</h3><p class="dcard__desc">Закрою вас, детей и дом. Чужое зло больше не пройдёт.</p></a>
+      <a class="dcard"><div class="dcard__img"><img src="img/d-semya.webp" alt="Возврат в семью"></div><span class="dcard__num">07</span><h3 class="dcard__name">Возврат в семью</h3><p class="dcard__desc">Верну мужа и мир в дом. Даже если он ушёл к другой.</p></a>
+      <a class="dcard"><div class="dcard__img"><img src="img/d-venec.webp" alt="Венец безбрачия"></div><span class="dcard__num">08</span><h3 class="dcard__name">Венец безбрачия</h3><p class="dcard__desc">Сниму венец безбрачия — и вы встретите своего человека.</p></a>
+      <a class="dcard"><div class="dcard__img"><img src="img/d-dengi.webp" alt="Денежные обряды"></div><span class="dcard__num">09</span><h3 class="dcard__name">Денежные обряды</h3><p class="dcard__desc">Открою денежные дороги. Деньги придут — и останутся в доме.</p></a>
+      <a class="dcard"><div class="dcard__img"><img src="img/d-biznes.webp" alt="Бизнес"></div><span class="dcard__num">10</span><h3 class="dcard__name">Бизнес</h3><p class="dcard__desc">Защищу дело и прибыль, разберусь с партнёрами и конкурентами.</p></a>
+    </div>
+  </section>
+
+  <!-- STEPS -->
+  <section class="section wrap" id="priem">
+    <p class="eyebrow" data-reveal style="margin-bottom:18px">Как проходит приём</p>
+    <div class="steps" data-stagger>
+      <div class="step"><div class="step__n">1</div><h4>Звонок</h4><p>Позвоните и расскажите, что случилось. Отвечу сама.</p></div>
+      <div class="step"><div class="step__n">2</div><h4>Консультация по телефону</h4><p>Скажу, в чём причина ваших бед и как я помогу. Бесплатно.</p></div>
+      <div class="step"><div class="step__n">3</div><h4>Встреча у меня</h4><p>Приходите. Раскладываю карты, вижу корень и берусь за работу.</p></div>
+      <div class="step"><div class="step__n">4</div><h4>Результат</h4><p>Делаю то, что нужно. Вы получаете результат, а не пустые обещания.</p></div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section wrap about" id="o-mne">
+    <div class="about__img" data-reveal><img src="img/about.webp" alt="Сивилла"></div>
+    <div>
+      <p class="eyebrow" data-reveal>Обо мне</p>
+      <h2 class="serif" data-reveal>Меня зовут Сивилла</h2>
+      <p data-reveal>Людей я принимаю сорок два года. Едут ко мне из Ростова, из Донецка, из Москвы — часто с тем, с чем уже обошли всех. Принимаю только лично и берусь за то, что тянется годами.</p>
+      <p class="pull" data-reveal>Ко мне не приходят от хорошей жизни. Приходят, когда её нужно вернуть.</p>
+      <p data-reveal>Причину вижу с первого расклада: порча, венец, разлад в семье, перекрытые деньги. Называю как есть — и убираю.</p>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section class="section wrap">
+    <div class="sec-head">
+      <h2 class="serif" data-reveal>Принимаю у себя</h2>
+      <p class="muted" data-reveal style="max-width:38ch">Дома, среди старинных вещей и свечей — здесь вас никто не увидит. Как доехать, объясню по телефону.</p>
+    </div>
+    <div class="gal" data-stagger>
+      <figure><img src="img/g1.webp" alt="Расклад Таро"><figcaption>Расклад Таро</figcaption></figure>
+      <figure><img src="img/g2.webp" alt="За столом"><figcaption>За столом</figcaption></figure>
+      <figure><img src="img/priem.jpg" alt="Комната приёма Сивиллы при свечах"><figcaption>Комната приёма</figcaption></figure>
+    </div>
+  </section>
+
+  <!-- PRICE -->
+  <section class="section wrap" id="cena">
+    <div class="price" data-reveal>
+      <p class="eyebrow" style="position:relative">Не тяните</p>
+      <h2 class="serif" style="position:relative;font-size:var(--fs-h2);margin-top:12px">Позвоните<br>прямо сейчас</h2>
+      <p class="price__note">Запишитесь на консультацию по телефону. Расскажите, что случилось, — скажу, в чём причина и как я это уберу.</p>
+      <a class="btn" href="tel:+79612885849" data-magnetic style="position:relative;margin-top:28px">Записаться на консультацию</a>
+    </div>
+  </section>
+
+  <!-- ОТЗЫВЫ -->
+  <section class="section wrap" id="otzyvy">
+    <div class="rev-head">
+      <p class="eyebrow" data-reveal>Отзывы</p>
+      <h2 class="serif" data-reveal>Люди, которым я помогла</h2>
+    </div>
+    <div class="swiper reviews" data-swiper="reviews">
+      <div class="swiper-wrapper">
+        <div class="rev swiper-slide"><picture><source srcset="/img/otzyvy/elena-venec.webp" type="image/webp"><img src="/img/otzyvy/elena-venec.jpg" alt="Скриншот отзыва в MAX, имя и фото скрыты" loading="lazy"></picture></div>
+        <div class="rev swiper-slide"><picture><source srcset="/img/otzyvy/elena-vernulsya.webp" type="image/webp"><img src="/img/otzyvy/elena-vernulsya.jpg" alt="Скриншот отзыва в MAX, имя и фото скрыты" loading="lazy"></picture></div>
+        <div class="rev swiper-slide"><picture><source srcset="/img/otzyvy/igor-kontrakt.webp" type="image/webp"><img src="/img/otzyvy/igor-kontrakt.jpg" alt="Скриншот отзыва в MAX, имя и фото скрыты" loading="lazy"></picture></div>
+        <div class="rev swiper-slide"><picture><source srcset="/img/otzyvy/elena-chistki.webp" type="image/webp"><img src="/img/otzyvy/elena-chistki.jpg" alt="Скриншот отзыва в MAX, имя и фото скрыты" loading="lazy"></picture></div>
+        <div class="rev swiper-slide"><picture><source srcset="/img/otzyvy/roksana-obryad.webp" type="image/webp"><img src="/img/otzyvy/roksana-obryad.jpg" alt="Скриншот отзыва в MAX, имя и фото скрыты" loading="lazy"></picture></div>
+        <div class="rev swiper-slide"><picture><source srcset="/img/otzyvy/anastasia-dorogi.webp" type="image/webp"><img src="/img/otzyvy/anastasia-dorogi.jpg" alt="Скриншот отзыва в MAX, имя и фото скрыты" loading="lazy"></picture></div>
+        <div class="rev swiper-slide"><picture><source srcset="/img/otzyvy/oksana-amulet.webp" type="image/webp"><img src="/img/otzyvy/oksana-amulet.jpg" alt="Скриншот отзыва в MAX, имя и фото скрыты" loading="lazy"></picture></div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section wrap cta" id="kontakty">
+    <h2 class="cta__title" data-reveal>Ушёл муж? Полоса неудач? Звоните.</h2>
+    <a class="cta__phone" href="tel:+79612885849" data-reveal data-magnetic>+7 961 288-58-49</a>
+    <p class="cta__note" data-reveal>Не взяла трубку — значит, у меня человек. Перезвоню сама, как освобожусь.</p>
+    <p class="cta__hours" data-reveal>Ежедневно 10:00–20:00 · записаться можно по телефону</p>
+    <p data-reveal style="margin-top:32px"><a class="btn" href="tel:+79612885849" data-magnetic>Записаться на консультацию</a></p>
+  </section>
+</main>
+
+<footer class="footer wrap">
+  <div class="footer__grid">
+    <div class="footer__col">
+      <div class="footer__logo">Сивилла</div>
+      <p class="muted" style="max-width:30ch;margin-top:10px">Эзотерический практик. Ростов-на-Дону, приём только лично.</p>
+    </div>
+    <div class="footer__col"><h5>Направления</h5><a href="#napravleniya">Таро</a><a href="#napravleniya">Ленорман</a><a href="#napravleniya">Кофейная гуща</a><a href="#napravleniya">Чтение по руке</a></div>
+    <div class="footer__col"><h5>Разделы</h5><a href="#priem">Как проходит</a><a href="#o-mne">Обо мне</a><a href="#cena">Консультация</a><a href="#kontakty">Контакты</a></div>
+    <div class="footer__col"><h5>Контакты</h5><a href="tel:+79612885849">+7 961 288-58-49</a><p>Ежедневно 10:00–20:00</p><p>Ростов-на-Дону</p></div>
+  </div>
+  <div class="footer__bottom">
+    <span>© <span id="year"></span> Сивилла · Ростов-на-Дону</span>
+    <span>Приём только по предварительной записи</span>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/splitting/1.0.6/splitting.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.1.14/swiper-bundle.min.js"></script>
+<script>
+document.getElementById('year').textContent=new Date().getFullYear();
+const header=document.querySelector('[data-header]');
+addEventListener('scroll',()=>header.classList.toggle('scrolled',scrollY>40));
+
+const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+const fast=performance.now()<2500; // GSAP успел загрузиться быстро?
+
+function killLoader(){const l=document.querySelector('[data-loader]');if(l){l.style.opacity='0';setTimeout(()=>{l.style.display='none';},500);}}
+function setCounters(){document.querySelectorAll('[data-count]').forEach(el=>{el.textContent=(+el.dataset.count).toLocaleString('ru-RU')+((el.dataset.suffix||'').replace(' ',' '));});}
+
+function wireInteractions(){
+  const bg=document.querySelector('.hero__bg img');
+  if(bg) gsap.to(bg,{yPercent:12,ease:'none',scrollTrigger:{trigger:'.hero',start:'top top',end:'bottom top',scrub:true}});
+  document.querySelectorAll('[data-magnetic]').forEach(btn=>{
+    btn.addEventListener('pointermove',e=>{const r=btn.getBoundingClientRect();
+      gsap.to(btn,{x:(e.clientX-r.left-r.width/2)*.25,y:(e.clientY-r.top-r.height/2)*.25,duration:.4,ease:'power3.out'})});
+    btn.addEventListener('pointerleave',()=>gsap.to(btn,{x:0,y:0,duration:.5,ease:'elastic.out(1,.4)'}));
+  });
+  addEventListener('load',()=>ScrollTrigger.refresh());
+}
+
+if(!window.gsap){ killLoader(); setCounters(); }
+else{
+  gsap.registerPlugin(ScrollTrigger);
+  if(window.Splitting) Splitting();
+
+  if(reduce || !fast){
+    // медленная загрузка/reduced-motion: контент виден по умолчанию, без интро
+    killLoader(); setCounters();
+    document.querySelectorAll('[data-words] .word').forEach(w=>{w.style.color='var(--cream)';});
+    wireInteractions();
+  }else{
+    const heroTitle=document.querySelector('[data-hero-title]');
+    const tl=gsap.timeline();
+    tl.to('.loader__bar',{'--p':1,duration:.6,ease:'power2.inOut'})
+      .to('.loader',{autoAlpha:0,duration:.4,ease:'power2.inOut'})
+      .set('.loader',{display:'none'})
+      .from(heroTitle,{yPercent:16,opacity:0,duration:1.1,ease:'expo.out'},'-=.15')
+      .from('.hero [data-reveal]',{opacity:0,y:24,duration:.8,ease:'power3.out',stagger:.1},'-=.55');
+
+    gsap.utils.toArray('[data-reveal]').forEach(el=>{
+      if(el.closest('.hero'))return;
+      gsap.from(el,{opacity:0,y:40,duration:1,ease:'power3.out',scrollTrigger:{trigger:el,start:'top 88%'}});
+    });
+    gsap.utils.toArray('[data-stagger]').forEach(box=>{
+      gsap.from(box.children,{opacity:0,y:40,duration:.9,ease:'power3.out',stagger:.09,scrollTrigger:{trigger:box,start:'top 84%'}});
+    });
+    const words=document.querySelectorAll('[data-words] .word');
+    if(words.length)gsap.fromTo(words,{color:'var(--muted)'},{color:'var(--cream)',stagger:.35,ease:'none',scrollTrigger:{trigger:'[data-words]',start:'top 80%',end:'bottom 62%',scrub:true}});
+
+    gsap.utils.toArray('[data-count]').forEach(el=>{
+      const end=+el.dataset.count, suf=(el.dataset.suffix||'').replace(' ',' ');
+      const o={n:0};
+      gsap.to(o,{n:end,duration:1.8,ease:'power2.out',
+        onUpdate(){el.textContent=Math.ceil(o.n).toLocaleString('ru-RU')+suf},
+        scrollTrigger:{trigger:el,start:'top 88%'}});
+    });
+
+    wireInteractions();
+  }
+}
+</script>
+<script>
+if(window.Swiper){
+  new Swiper('[data-swiper="reviews"]',{
+    slidesPerView:'auto',spaceBetween:20,grabCursor:true,speed:600,loop:true,
+    autoplay:{delay:4500,disableOnInteraction:false},
+    pagination:{el:'.reviews .swiper-pagination',clickable:true},
+    breakpoints:{768:{spaceBetween:28}}
+  });
+}
+</script>
+<div class="ck" id="ckbar" hidden>
+  <p>Сайт сохраняет cookie — они нужны, чтобы страницы работали, и для счётчика посещений. Оставаясь здесь, вы соглашаетесь с <a href="/politika/">политикой обработки персональных данных</a>.</p>
+  <button type="button" id="ckok">Хорошо</button>
+</div>
+<script>
+(function(){
+  var K='sivilla-cookie-ok', bar=document.getElementById('ckbar'), btn=document.getElementById('ckok');
+  if(!bar||!btn) return;
+  try{ if(localStorage.getItem(K)) return; }catch(e){}
+  bar.hidden=false;
+  btn.addEventListener('click',function(){ bar.hidden=true; try{localStorage.setItem(K,'1')}catch(e){} });
+})();
+</script>
+</body>
+</html>
